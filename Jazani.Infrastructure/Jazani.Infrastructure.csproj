@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jazani.Domain\Jazani.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Admins\" />
+    <None Remove="Generals\" />
+    <None Remove="Admins\Configurations\" />
+    <None Remove="Admins\Persistences\" />
+    <None Remove="Generals\Persistences\" />
+    <None Remove="Generals\Configurations\" />
+    <None Remove="Cores\" />
+    <None Remove="Cores\Contexts\" />
+    <None Remove="Cores\Converters\" />
+    <None Remove="Cores\Persistences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generals\" />
+    <Folder Include="Generals\Persistences\" />
+    <Folder Include="Generals\Configurations\" />
+    <Folder Include="Cores\" />
+    <Folder Include="Cores\Contexts\" />
+    <Folder Include="Cores\Converters\" />
+    <Folder Include="Cores\Persistences\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.15" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+</Project>

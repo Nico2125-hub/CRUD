@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Admins\" />
+    <None Remove="Generals\" />
+    <None Remove="Admins\Dtos\" />
+    <None Remove="Admins\Services\" />
+    <None Remove="Generals\Dtos\" />
+    <None Remove="Generals\Services\" />
+    <None Remove="Admins\Dtos\AreaTypes\" />
+    <None Remove="Admins\Dtos\LanguageMenu\Profiles\" />
+    <None Remove="Admins\Services\Implementations\" />
+    <None Remove="Cores\" />
+    <None Remove="Cores\Contexts\" />
+    <None Remove="Admins\Dtos\Areas\" />
+    <None Remove="Admins\Dtos\Menu\Profiles\" />
+    <None Remove="Cores\Exceptions\" />
+    <None Remove="Admins\Dtos\LanguageMenu\Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generals\" />
+    <Folder Include="Generals\Dtos\" />
+    <Folder Include="Generals\Services\" />
+    <Folder Include="Cores\Contexts\" />
+    <Folder Include="Cores\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jazani.Domain\Jazani.Domain.csproj" />
+  </ItemGroup>
+</Project>
